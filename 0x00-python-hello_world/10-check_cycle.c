@@ -16,10 +16,11 @@ int check_cycle(listint_t *list)
 
 	while (first_ptr && second_ptr && second_ptr->next)
 	{
-		if (first_ptr == second_ptr)
-			return (1);
 		first_ptr = first_ptr->next;
 		second_ptr = second_ptr->next->next;
+
+		if (first_ptr == second_ptr)
+			return (1);
 	}
 	return (0);
 }
