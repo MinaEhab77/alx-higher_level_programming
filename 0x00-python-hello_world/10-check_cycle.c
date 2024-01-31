@@ -13,10 +13,10 @@ int check_cycle(listint_t *list)
 	if (!list)
 		return (0);
 
-	while (first_ptr && second_ptr->next && second_ptr->next->next)
+	while (first_ptr && second_ptr && second_ptr->next)
 	{
 		first_ptr = first_ptr->next;
-		second_ptr = second_ptr->next->next->next;
+		second_ptr = second_ptr->next->next;
 
 		if (first_ptr == second_ptr)
 			return (1);
