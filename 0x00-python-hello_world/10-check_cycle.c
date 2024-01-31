@@ -12,15 +12,15 @@ int check_cycle(listint_t *list)
 		return (0);
 
 	listint_t *first_ptr = list;
-        listint_t *second_ptr = list->next;
+	listint_t *second_ptr = list->next;
 
-        while (first_ptr && second_ptr && second_ptr->next)
-        {
-                if (first_ptr == second_ptr)
-                        return (1);
-                first_ptr = first_ptr->next;
-                second_ptr = second_ptr->next->next;
-        }
-        return (0);
+	while (first_ptr && second_ptr && second_ptr->next)
+	{
+		if (first_ptr == second_ptr)
+			return (1);
+		first_ptr = first_ptr->next;
+		second_ptr = second_ptr->next->next;
+	}
+	return (0);
 }
 
