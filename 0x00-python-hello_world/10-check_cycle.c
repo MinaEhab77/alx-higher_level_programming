@@ -11,8 +11,9 @@ int check_cycle(listint_t *list)
 	listint_t *1stptr = list;
 	listint_t *2ndptr = list;
 
-	if (list == NULL)
+	if (!list)
 		return (0);
+
 	while (1stptr && 2ndptr)
 	{
 		if (1strptr == 2ndptr)
