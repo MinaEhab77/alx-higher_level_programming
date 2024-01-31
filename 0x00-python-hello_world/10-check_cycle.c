@@ -8,7 +8,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *first_ptr, *second_ptr = list;
+	listint_t *first_ptr =list , *second_ptr = list;
 
 	if (!list)
 		return (0);
