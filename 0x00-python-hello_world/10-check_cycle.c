@@ -21,8 +21,8 @@ int check_cycle(listint_t *list)
 		if (1stptr == 2ndptr)
 			return (1);
 
-		slow = slow->next;
-		fast = fast->next->next;
+		1stptr = 1stptr->next;
+		2ndptr = 2ndptr->next->next;
 	}
 
 	return (0);
