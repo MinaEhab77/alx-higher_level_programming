@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 	while (first_ptr && second_ptr->next && second_ptr->next->next)
 	{
 		first_ptr = first_ptr->next;
-		second_ptr = second_ptr->next->next;
+		second_ptr = second_ptr->next->next->next;
 
 		if (first_ptr == second_ptr)
 			return (1);
