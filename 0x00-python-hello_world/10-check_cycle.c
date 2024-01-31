@@ -8,8 +8,8 @@
  */
 int check_cycle(listint_t *list)
 {
-        if (!list)
-                return (0);
+	if (!list)
+		return (0);
 
 	listint_t *first_ptr = list;
         listint_t *second_ptr = list->next;
