@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-def no_c(my_string):
+#!/usr/bin/python
+3def no_c(my_string):
 
     new_string = ''
 
